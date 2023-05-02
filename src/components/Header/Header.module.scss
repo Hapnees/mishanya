@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid $red;
+
+  max-width: $max-width;
+
+  margin: auto;
+  @include ui-padding(ver, 4);
+}

@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  align-self: flex-end;
+  font-weight: 600;
+
+  >a {
+    position: relative;
+    font-size: 18px;
+    @include ui-padding(hor, 4);
+
+    &:hover>.underline {
+      opacity: 1;
+    }
+  }
+}
+
+.underline {
+  position: absolute;
+  display: block;
+
+  left: 5%;
+  bottom: -4px;
+
+  width: 90%;
+  height: 2px;
+
+  transition: opacity .4s;
+
+  opacity: 0;
+  background-color: #eb1c22;
+
+  &__active {
+    opacity: 1;
+  }
+}
