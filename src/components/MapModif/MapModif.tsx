@@ -17,7 +17,10 @@ const MapModif = () => {
   }
 
   return (
-    <YMaps>
+    <YMaps
+      enterprise
+      query={{ apikey: 'f7c64be5-e697-4d40-857b-febbed9b3492' }}
+    >
       <Map
         defaultState={{ center: [50.066383, 45.394768], zoom: 11 }}
         {...mapOptions}
