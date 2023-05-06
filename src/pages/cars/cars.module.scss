@@ -1,0 +1,148 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include ui-padding(bottom, 10);
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 168px;
+  row-gap: 96px;
+
+  @include ui-margin(ver, 10);
+
+  >li {
+    width: fit-content;
+  }
+}
+
+.img {
+  border-bottom: 1px solid #e4e4e4;
+
+  object-fit: cover;
+  @include ui-padding(bottom, 4);
+  @include ui-margin(bottom, 4);
+}
+
+.info {
+  font-size: 20px;
+
+  @include ui-margin(bottom, 4);
+
+  &__suptitle {
+    @include ui-margin(bottom, 1);
+
+    >span:first-child {
+      font-weight: 700;
+    }
+
+    >span:last-child {
+      color: #bfbaba;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 0.3px;
+  }
+}
+
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+
+  @include ui-margin(bottom, 4);
+  @include ui-padding(bottom, 4);
+
+  border-bottom: 1px solid #e4e4e4;
+
+  svg {
+    width: 22px;
+    height: 22px;
+    color: $red;
+  }
+
+  >li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    border-radius: 12px;
+
+    border: 1px solid #c2c2c273;
+
+    @include ui-padding(default, 2);
+  }
+}
+
+.rent {
+  display: flex;
+  align-items: center;
+
+  color: $red;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+
+  cursor: pointer;
+}
+
+.back_button {
+  background-color: #da372f;
+  padding: 20px 36px;
+}
+
+
+.arrows {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+
+  top: 20%;
+  width: 100%;
+
+  pointer-events: none;
+
+  >div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    pointer-events: all;
+
+    height: 400px;
+    width: 80px;
+
+    cursor: pointer;
+
+    &:first-child {
+      transform: rotate(180deg);
+    }
+
+    >svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.page {
+  position: absolute;
+  top: 50px;
+
+
+  font-weight: 700;
+  font-size: 20px;
+
+  border-radius: 100%;
+
+  background-color: #cfc8c839;
+  padding: 20px 30px;
+}

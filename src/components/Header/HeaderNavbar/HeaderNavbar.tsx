@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 const HeaderNavbar = () => {
   const tabs = [
     { title: 'Главная', href: '/', isSelect: false },
-    { title: 'Автомобили', href: '/1', isSelect: false },
+    { title: 'Автомобили', href: '/cars', isSelect: false },
     { title: 'О нас', href: '/about', isSelect: false },
     { title: 'Контакты', href: '/contacts', isSelect: false },
   ]

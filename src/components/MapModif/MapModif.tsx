@@ -6,7 +6,7 @@ import {
   TrafficControl,
   YMaps,
   ZoomControl,
-} from 'react-yandex-maps'
+} from '@pbe/react-yandex-maps'
 
 const MapModif = () => {
   const mapOptions = {
@@ -26,7 +26,7 @@ const MapModif = () => {
         {...mapOptions}
         className={style.map}
       >
-        <ZoomControl defaultOptions={{ innerWidth: 128 }} />
+        <ZoomControl />
         <FullscreenControl />
         <SearchControl />
         <TrafficControl />

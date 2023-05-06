@@ -1,0 +1,11 @@
+.title {
+  color: #cecece;
+  @include ui-margin(bottom, 1);
+}
+
+.input {
+  border: 1px solid #e2e2e2;
+  font-size: 18px;
+
+  padding: 8px 12px;
+}

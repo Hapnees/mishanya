@@ -3,7 +3,7 @@ import car from '@/assets/big_car.png'
 import Image from 'next/image'
 import style from './index.module.scss'
 import { BsGear } from 'react-icons/bs'
-import BlackButton from '@/components/UI/BlackButton/BlackButton'
+import BasicButton from '@/components/UI/BasicButton/BasicButton'
 
 const Home = () => {
   return (
@@ -23,7 +23,7 @@ const Home = () => {
           <p>Доступнее, чем Вы ожидаете!</p>
         </div>
 
-        <BlackButton>Парк автомобилей</BlackButton>
+        <BasicButton>Парк автомобилей</BasicButton>
       </div>
 
       <p className={style.copyright}>© 2023. Все права защищены</p>

@@ -1,0 +1,38 @@
+.wrapper {
+  @include ui-padding(bottom, 6);
+}
+
+.welcome {
+  font-weight: 700;
+  font-size: 20px;
+
+  @include ui-margin(top, 8);
+  @include ui-margin(bottom, 20);
+
+  &::before {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 10px;
+
+    background-color: #fe0000;
+    border-radius: 6px;
+  }
+}
+
+.title {
+  font-size: 36px;
+
+  @include ui-margin(bottom, 4);
+}
+
+.text {
+  @include ui-margin(bottom, 6);
+}
+
+.button {
+  background-color: #c32021;
+
+  margin: auto;
+  padding: 16px 32px;
+}
