@@ -4,6 +4,7 @@ import Image from 'next/image'
 import style from './index.module.scss'
 import { BsGear } from 'react-icons/bs'
 import BasicButton from '@/components/UI/BasicButton/BasicButton'
+import Link from 'next/link'
 
 const Home = () => {
   return (
@@ -23,7 +24,9 @@ const Home = () => {
           <p>Доступнее, чем Вы ожидаете!</p>
         </div>
 
-        <BasicButton>Парк автомобилей</BasicButton>
+        <Link href={'/cars'}>
+          <BasicButton>Парк автомобилей</BasicButton>
+        </Link>
       </div>
 
       <p className={style.copyright}>© 2023. Все права защищены</p>
